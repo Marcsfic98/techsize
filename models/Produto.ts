@@ -7,13 +7,15 @@ export abstract class Produto{
     private _nome:string
     private _preco:number
     private _descricao:string
+    private _quantidade:number
     
     
-    constructor(id:number ,nome:string , preco:number , descricao:string){
+    constructor(id:number ,nome:string , preco:number , descricao:string , quantidade:number ){
         this._id = id
         this._nome = nome
         this._preco = preco
         this._descricao = descricao
+        this._quantidade = quantidade
     }
 
 
@@ -49,7 +51,28 @@ export abstract class Produto{
         this._descricao = descricao
     }
 
+      public get quantidade(){
+        return this._quantidade
+    }
 
+    public set quantidade(quantidade:number){
+        this._quantidade = quantidade
+    }
+
+
+
+     public visualizar():void {
+        console.log('\n\n************************************************************')
+        console.log('DADOS DO PRODUTO:')
+        console.log('***********************************************************')
+        console.log('ID: ' + this._id);
+        console.log('NOME: ' + this._nome)
+        console.log('PRECO: '+ this._preco);
+        console.log('DESCRICAO: ' + this._descricao);
+        console.log('QUANTIDADE: ' + this._quantidade);
+        
+
+     }
 
 
 
