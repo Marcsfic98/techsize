@@ -66,9 +66,9 @@ export abstract class Produto{
         console.log('DADOS DO PRODUTO:')
         console.log('***********************************************************')
         console.log('ID: ' + this._id);
-        console.log('NOME: ' + this._nome)
+        console.log('NOME: ' + this._nome.toUpperCase())
         console.log('PRECO: '+ this._preco);
-        console.log('DESCRICAO: ' + this._descricao);
+        console.log('DESCRICAO: ' + this._descricao.toUpperCase);
         console.log('QUANTIDADE: ' + this._quantidade);
         
 
