@@ -15,6 +15,7 @@ export class Produto implements ProdutoRepository {
         this._descricao = descricao
     }
 
+
     public get id(){
         return this._id
     }
@@ -46,4 +47,25 @@ export class Produto implements ProdutoRepository {
     public set descricao(descricao:string){
         this._descricao = descricao
     }
+
+
+
+
+
+    adicionarProduto(): void {
+        throw new Error("Method not implemented.")
+    }
+    deletarProduto(): void {
+        throw new Error("Method not implemented.")
+    }
+    alterarProduto(): void {
+        throw new Error("Method not implemented.")
+    }
+    listarProdutos(): void {
+        throw new Error("Method not implemented.")
+    }
+    mostrarProduto(): void {
+        throw new Error("Method not implemented.")
+    }
+    
 }
