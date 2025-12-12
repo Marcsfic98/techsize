@@ -1,7 +1,8 @@
 import readlinesync = require("readline-sync");
 import { colors } from "./utils/Colors";
 
-let opcao :number
+export function main (){
+    let opcao :number
 
 
     while(true){
@@ -65,8 +66,13 @@ let opcao :number
          }
 
 
+
+}
+
  function keyPress(): void {
     console.log(colors.reset, "");
     console.log("\nPressione enter para continuar...");
     readlinesync.prompt();
 }
+
+main()
